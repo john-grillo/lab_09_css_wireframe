@@ -1,0 +1,79 @@
+/* THIS IS JOHN GRILLO'S AMAZING SALMON COOKIE STORE STYLE SHEET. */
+* {
+  box-sizing: border-box;
+}
+
+/******************
+  TABLE SECTION
+******************/
+table {
+  border: 5px dashed red;
+  /*border-spacing: collapse;*/
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+thead, th {
+  font-weight: bold;
+   /*aka, 'salmon'; just writing 'salmon' also works */
+   /*hex = #FA8072 */
+  background: rgba(250, 128, 114, 1);
+}
+
+tr {
+  /*background: azure;*/
+  font-size: 1.6em;
+}
+
+td {
+  background: lightblue;
+  border: 1px solid rgba(218,165,32, 1); /*'goldenrod'*/
+}
+
+tfoot {
+   display: table-footer-group;
+   vertical-align: middle;
+   border-color: inherit;
+   background: #deedbe;
+}
+
+/*HIGHLISGHTS RELEVANT CELLS IN PURPLE */
+thead:hover, tfoot:hover, tr:hover
+th:hover, td:hover {
+  position: relative;
+  background: rgba(205,50,205, .6); /*deep purple*/
+  box-shadow: 0 0 5px 5px rgba(50, 205, 50, 1); /* glowing lime color, reduced opacity */
+  z-index: 20px;*/
+  /*margin: 20px auto;
+  padding: 20px;*/
+}
+
+form {
+  display: inline-block;
+  margin: 20px auto;
+}
+
+form:hover {
+  box-shadow: 0 0 5px 5px rgba(50, 205, 50, 1); /* glowing lime color, reduced opacity */
+  z-index: 50px;
+}
+
+input{
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+input[type="number"]:focus, input[type="text"]:focus {
+  background: rgba(205,50,205, .8);
+  box-shadow: 0 0 5px 5px rgba(205,50,205, .8); /* glowing purple color, reduced opacity */
+
+}
+
+#submitButton {
+  content: 'make a new store!';
+  text-transform: uppercase;
+  margin: 1rem;
+  padding: 1rem;
+}

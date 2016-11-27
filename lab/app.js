@@ -148,7 +148,7 @@ var seattleCenter = new CookieStore('Seattle Center', 22, 65, 6.3);
 var capitolHill = new CookieStore('Capitol Hill', 20, 38, 2.3);
 var alki = new CookieStore('Alki', 2, 16, 4.8);
 var storeList = [pike, seatac, seattleCenter, capitolHill, alki];
-completeStoreList = storeList; //this copie storeList to completeStoreList
+completeStoreList = storeList; //this copies storeList to completeStoreList
 
 //now to print the tables to screen
 function printStores(){

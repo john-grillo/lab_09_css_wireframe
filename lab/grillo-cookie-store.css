@@ -134,6 +134,29 @@ nav li:hover {
   overflow: auto;
 }
 
+#storeblock {
+  width: 900px;
+  margin: 1rem;
+}
+
+#storeblock section {
+  display: inline-block;
+  margin: 8px;
+  padding: 5px;
+}
+
+#storeblock section:hover {
+  border: dashed lime;
+  background: rgba(0, 0, 0, .8);
+  color: white;
+  transition: 1s
+}
+
+#storeblock section a:hover {
+  color: red;
+  transition: 1s
+}
+
 footer {
   width: 960px;
 }

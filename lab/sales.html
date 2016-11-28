@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="author" content="John Andrew Grillo">
+   <meta name="description" content="This webpage lists sales of the salmon cookie store.">
+   <meta name="keywords" content="john grillo, john andrew grillo, salmon, salmon cookies, cookies">
+   <title>John Grillo Presents Salmon Tables! Not to be confused with Salmon Ladders</title>
+   <link rel="stylesheet" href="grillo-cookie-store.css" type="text/css">
+   <link rel="stylesheet" href="normalize.css" type="text/css">
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- <img src="http://placehold.it/200x70"> -->
+      <img id="logo" src="assets/img/chinook.jpg">
+      <ul>
+        <a href="index.html" ><li>Home - Salmon Cookie Store</li></a>
+        <a href="about.html"><li>About Seattle Salmon Cookies</li></a>
+        <a href="locations.html"><li>Our Locations</li></a>
+        <a href="press.html"><li>Press </li></a>
+        <a href="sales.html" class="currentPage"><li> Store Sale Calculator</li></a>
+      </ul>
+    </nav>
+  </header>
+
+<h1>DYNAMIC TABLE MADE BY JOHN GRILLO WITH HTML5, CSS3, JAVASCRIPT</h1>
+<table id='store_table'>
+  <!-- JavaScript creates dynamic content here -->
+  <tfoot id="column_calc">
+  </tfoot>
+</table>
+<!-- JavaScript here in <section> will use form to build new store row. -->
+<!-- Constructor calls: storeName, minCust, maxCust, avgCookies -->
+   <form id="new_store_sales">
+     <input type="reset">
+     <input required type="text" id="new_store_name" placeholder="storeName" name="new_store_name">
+     <input required type="number" min="1" id="new_store_min_cust" placeholder="minCust" name="new_store_min_cust">
+     <input required type="number" min="1" id="new_store_max_cust" placeholder="maxCust" name="new_store_max_cust">
+     <input required type="number" min="1" id="new_store_avg_cookies" placeholder="avgCookies" name="new_store_avg_cookies">
+     <input type="submit" id="submitButton" value="Make a new store!" name="submit">
+   </form>
+   <section id="form_printer">
+
+   </section>
+  <footer>
+    <p>Produced by John Andrew Grillo</p>
+  </footer>
+ <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

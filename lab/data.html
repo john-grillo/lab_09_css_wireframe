@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--Behold the salmon ascii! From http://salmon.ascii.uk/
+                    .ed$$$F
+                  z$$$$$$"
+                 4$$$$$$F          .$*"""*$P          *Salmon*
+                 $$$$$$$be.       z"     z"
+               z" $        *c    e"     /
+              P   '           "*"
+            ."     $                    r
+            F      'L                   3
+           $        "c                   .
+          .          ^b                  $
+          $            *c   z$*"""**b.   4
+          P              *$P          *$ 4
+          F                 "$c         *d
+          F                    "*e.      "
+      G $cb                       "$c
+      i $$$c                         *c
+      l 3$$$$$$ec                      $.
+      o  $$$$$$$$$$.                    "c
+      9   $$$$$$$$$$c                    'c
+      4,   *$$$$$$$$$c                    "c
+             "$$$$$$$"               $ 3   *
+               "$$                   *.J    $
+                 "$b                        3r
+                   "$b.                      $
+                     ^*$e.                   $
+                        "$$$c                ^F
+                           ^*$$$e.           JF
+                                 "**$$$beee$$P
+-->
+
+
+
+
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+  <meta charset="UTF-8">
+  <title>John Grillo Presents Salmon Tables! Not to be confused with Salmon Ladders</title>
+  <meta name="author" content="John Andrew Grillo">
+  <meta name="description" content="Welcome to John Grillo Salmon Cookie store!">
+  <meta name="keywords" content="seattle, salmon store, real cookie store, cookies, john andrew grillo">
+  <link rel="stylesheet" href="normalize.css" type="text/css">
+  <link rel="stylesheet" href="grillo-cookie-store.css" type="text/css">
+</head>
+<body>
+<main>
+  <header>
+    <nav>
+      <!-- <img src="http://placehold.it/200x70"> -->
+      <img id="logo" src="assets/img/chinook.jpg">
+      <ul>
+        <a href="index.html" ><li>Home - Salmon Cookie Store</li></a>
+        <a href="about.html"><li>About Seattle Salmon Cookies</li></a>
+        <a href="locations.html"><li>Our Locations</li></a>
+        <a href="press.html"><li>Press </li></a>
+        <a href="data.html" class="currentPage"><li> Store Sale Calculator</li></a>
+      </ul>
+    </nav>
+  </header>
+    <!-- <img src="http://placehold.it/960x450" class="heroImg"> -->
+
+    <h1> SALMON COOKIE STORE LOCATIONS</h1>
+    <img class="heroImg" src="assets/img/datascience.png">
+    <h2> DYNAMIC TABLE MADE BY JOHN GRILLO WITH HTML5, CSS3, JAVASCRIPT</h2>
+    <h3> This page is supposed to be confidential and internal, so don't be lookin at it if you aren't authorized!</h3>
+
+  </main>
+  <!-- </main>  content wrapper moved up here to prevent ugly layout of table -->
+    <table id='store_table'>
+      <!-- JavaScript creates dynamic content here -->
+      <tfoot id="column_calc">
+      </tfoot>
+    </table>
+    <!-- JavaScript here in <section> will use form to build new store row. -->
+    <!-- Constructor calls: storeName, minCust, maxCust, avgCookies -->
+       <form id="new_store_sales">
+         <input type="reset">
+         <input required type="text" id="new_store_name" placeholder="storeName" name="new_store_name">
+         <input required type="number" min="1" id="new_store_min_cust" placeholder="minCust" name="new_store_min_cust">
+         <input required type="number" min="1" id="new_store_max_cust" placeholder="maxCust" name="new_store_max_cust">
+         <input required type="number" min="1" id="new_store_avg_cookies" placeholder="avgCookies" name="new_store_avg_cookies">
+         <input type="submit" id="submitButton" value="Make a new store!" name="submit">
+       </form>
+       <section id="form_printer">
+
+       </section>
+  <!-- </main> -->
+  <footer>
+    <p>This website is powered by Grillo Resources, LLC.</p>
+    <p>Written entirely by <a href="https://www.linkedin.com/in/johngrillo2"> John Andrew Grillo when he took a front-end refresher course</a></p>
+    <p><a href="http://hotoffthegrillo.com"> John Grillo's main web page can be found here.</a></p>
+    <p><a href="https://github.com/john-grillo">John Andrew Grillo <span id='github'>Github</a> </span></p>
+  </footer>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
